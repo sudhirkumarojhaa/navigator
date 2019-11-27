@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alata', sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px !important;
+}
+
+a:hover,
+.link-text span:hover {
+  text-decoration: none;
+  color: #fc3 !important;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+section {
+  text-align: center;
+}
+
+h2 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.8em;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  width: 2px;
+  height: 2px;
+  margin: -2px 0 0 -2px;
+  background: #fff;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -6px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.vertical-scrolling {
+  background-color: #000 !important;
+}
+
+.fp-slidesNav {
+  display: none !important;
+}
+
+.fp-section.fp-table,
+.fp-slide.fp-table {
+  height: 100% !important;
+}
+
+
+@media screen and (max-width: 767px) {
+  /* .scroll-icon {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}

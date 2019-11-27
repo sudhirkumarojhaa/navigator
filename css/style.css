@@ -1,0 +1,274 @@
+.first {
+  /* background: url('../img/bg.png') no-repeat center;
+  background-size: cover; */
+  height: 100vh;
+}
+
+
+.contactSection {
+  background-color: #fec403 !important;
+}
+
+.contactSection img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+
+.fas {
+  font-size: 4vw;
+  color: orange;
+}
+
+.fab {
+  font-size: 30px;
+  color: #fff;
+  margin: 20px;
+}
+
+.fab:hover {
+  color: #000;
+}
+
+span {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #e3e3e3;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-size: 14px;
+  text-align: left !important;
+  line-height: 24px;
+}
+
+
+.profile {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  margin: 80px auto;
+  border: 20px solid #f7d732;
+  z-index: 100;
+}
+
+.profile::before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 50%;
+  bottom: -50px;
+  right: -60px;
+  background: transparent;
+  border: 20px solid #fff;
+}
+
+.fly {
+  font-size: 14vw;
+  color: rgb(28, 33, 36);
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  text-align: center !important;
+}
+
+
+.author p {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 14px;
+  color: white;
+  text-align: left !important;
+}
+
+.logo {
+  width: 60px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  color: #f7d732;
+  text-transform: lowercase;
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-size: 18px;
+  word-spacing: 2px;
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+
+.link-text span {
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 90px 10px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+  border-width: 10px;
+}
+
+.thumbnail {
+  width: 400px;
+  height: 60vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+}
+
+.thumbnail::after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  left: 10%;
+  transform: skew(0deg) translateX(-50%);
+  background: rgba(187, 55, 7, 0.9);
+}
+
+.content {
+  padding: 100px;
+  width: 100%;
+}
+
+.clip {
+  width: 50px;
+  height: 45px;
+  position: absolute;
+  left: 35%;
+  top: 0;
+}
+
+.clip img {
+  object-fit: contain;
+}
+
+.banner {
+  width: 300px;
+  position: relative;
+}
+
+.banner-a {
+  transform: rotate(15deg);
+}
+
+.banner-b {
+  transform: rotate(-8deg);
+}
+
+.thumbnails {
+  width: 44%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  border: 15px solid #fff;
+}
+
+.thumbnails::before {
+  position: absolute;
+  content: '';
+  width: 140px;
+  height: 160px;
+  top: -15px;
+  right: -15px;
+  background: transparent;
+  border: 15px solid #f7d732;
+  padding: 24px 0 ;
+}
+
+.delhiSection .thumbnails::before {
+  content: 'Old Delhi Project';
+}
+
+
+.ukSection .thumbnails::before {
+  content: 'Uttarakhand Project';
+}
+
+.varanasiSection .thumbnails::before {
+  content: 'Varanasi Project';
+}
+
+.randomSection .thumbnails::before {
+  content: 'Random Collection';
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  font-size: 3vw;
+  line-height: 50px;
+  padding: 5px;
+  text-shadow: 0 5px 15px #000;
+  text-transform: capitalize;
+}
+
+.social p {
+  text-align: center !important;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .clip {
+    display: none !important;
+  }
+
+  .banner,
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+  }
+
+  .red,
+  .first-banner {
+    flex-wrap: wrap;
+  }
+
+  .content {
+    padding: 50px;
+    width: 100% !important;
+  }
+
+  .thumbnails {
+    width: 70%;
+    height: 100%;
+  }
+
+  .caption {
+    line-height: 10px;
+  }
+
+  .thumbnails::before {
+    display: none !important;
+  }
+}
