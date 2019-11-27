@@ -1,7 +1,8 @@
 const $headerTop = $('.header-top');
 
 $('#fullPage').fullpage({
-  sectionsColor: ['#000', '#000', '#000', '#000'],
+  // sectionsColor: ['#000', '#000', '#000', '#000'],
+  lockAnchors: true,
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
